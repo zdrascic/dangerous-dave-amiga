@@ -1,0 +1,33 @@
+# Normalize text, protect binaries — ends the LF/CRLF warning churn.
+
+* text=auto
+
+# sources & docs: LF in the repo, native on checkout
+*.c    text
+*.h    text
+*.s    text
+*.asm  text
+*.py   text
+*.md   text
+*.html text
+*.json text
+*.tmx  text
+*.mk   text
+Makefile text
+.gitignore text
+.gitattributes text
+
+# Windows batch files must stay CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# binary game data — never touch
+*.iff  binary
+*.mod  binary
+*.map  binary
+*.p61  binary
+*.bin  binary
+*.png  binary
+*.gif  binary
+*.rom  binary
+*.uae  binary

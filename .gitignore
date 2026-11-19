@@ -1,0 +1,32 @@
+# Build output
+/obj/
+/dave.elf
+/dave.exe
+/dave.map
+/dave.s
+*.o
+*.d
+
+# Asset package built from assets/ (make)
+/dave.ocs
+/dave.aga
+
+# FS-UAE run folder (tools/run_fsuae.sh)
+/run/
+
+# editors
+/.idea/
+# VS Code: keep only the project config amiga-debug needs (F5, build task,
+# IntelliSense); ignore caches, history and personal files
+/.vscode/*
+!/.vscode/amiga.json
+!/.vscode/c_cpp_properties.json
+!/.vscode/launch.json
+!/.vscode/settings.json
+!/.vscode/tasks.json
+*.code-workspace
+.history/
+
+# high scores a run writes next to the exe (the package has the default)
+/DSCORES.DAV
+/DSCORES.DAV.uaem

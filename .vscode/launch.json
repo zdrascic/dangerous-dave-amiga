@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "amiga",
+            "request": "launch",
+            "preLaunchTask": "compile",
+            "name": "Amiga 500",
+            "config": "A500",
+            "program": "${workspaceFolder}/dave",
+            "kickstart": "${workspaceFolder}/../roms/amiga500.rom",
+            "emuargs": ["-quickstart", "a500,0"],
+            "internalConsoleOptions": "openOnSessionStart",
+            "chipmem": "1m",
+            "slowmem": "512k",
+        },
+        {
+            "type": "amiga",
+            "request": "launch",
+            "preLaunchTask": "compile",
+            "name": "Amiga 1200",
+            "config": "A1200",
+            "program": "${workspaceFolder}/dave",
+            "kickstart": "${workspaceFolder}/../roms/amiga1200.rom",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "amiga",
+            "request": "launch",
+            "preLaunchTask": "compile",
+            "name": "Amiga 4000",
+            "config": "A4000",
+            "program": "${workspaceFolder}/dave",
+            "kickstart": "${workspaceFolder}/../roms/amiga1200.rom",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
